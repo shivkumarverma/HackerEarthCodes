@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+int main(){
+
+	int t;
+	cin>>t;
+	while(t--){
+		int num,add;
+		cin>>num>>add;
+		int rev_num=0;
+		int rev_num2=0;
+		while(num > 0) 
+    { 
+        rev_num = rev_num*10 + num%10; 
+        num = num/10; 
+    } 
+		while(add > 0) 
+    { 
+        rev_num2 = rev_num2*10 + add%10; 
+        add = add/10; 
+    }
+	int fcost=rev_num+rev_num2;
+	int res=0;
+		while(fcost > 0) 
+    { 
+        res = res*10 + fcost%10; 
+        fcost = fcost/10; 
+    }
+    cout<<res<<endl;
+	}
+}
