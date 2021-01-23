@@ -1,2 +1,3 @@
 # HackerEarthCodes
-competitive coding
+hacker earth competitive problem codes
+
